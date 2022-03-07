@@ -56,26 +56,85 @@
     </div>
 
     <div class="main-wrapper">
-        <header class="header header--agreement fadeIn wow" data-wow-delay=".5s" data-wow-duration=".5s" >
+        <header class="header header--agreement wow fadeIn" data-wow-delay=".3s" data-wow-duration=".5s">
             <div class="wrapper">
                 <div class="header__wrapper">
                     <a href="index.html" class="header__logo logo">
-                        <img src="../img/main/logo.svg" alt="logo">
+                        <img src="img/main/logo.svg" alt="logo">
                     </a>
-                    <nav class="header__nav nav ">
+                    <nav class="header__nav nav">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="payment.html" class="nav__link">Finance Options</a></li>
-                            <li class="nav__item"><a href="help-center.html" class="nav__link">Help Center</a></li>
-                            <li class="nav__item"><a href="agreement.html" class="nav__link">Promotions</a></li>
-                            <li class="nav__item"><a href="referral-program.html" class="nav__link">Referral Program</a>
+                            <li class="nav__item ">
+                                <div href="javascript:(void)" class="nav__link dropdown">
+                                    Start trading
+                                    <svg class="nav__lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.2 5.6C4.6 6.13333 5.4 6.13333 5.8 5.6L8.8 1.6C9.29443 0.940762 8.82405 -2.38419e-06 8 -2.38419e-06H2C1.17595 -2.38419e-06 0.705573 0.940762 1.2 1.6L4.2 5.6Z"
+                                            fill="#9BB3B7" />
+                                    </svg>
+                                </div>
+                                <div class="nav__item-hidden">
+                                    <ul class="nav__item-hidden-list">
+                                        <li class="nav__item-hidden-item">
+                                            <a href="account.html" class="nav__item-hidden-link">Account types</a>
+                                        </li>
+                                        <li class="nav__item-hidden-item">
+                                            <a href="payment.html" class="nav__item-hidden-link">Finance Options</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a href="help-center.html" class="nav__link">
+                                    Help Center
+                                </a>
+                            </li>
+                            <li class="nav__item ">
+                                <div href="javascript:(void)" class="nav__link dropdown ">
+                                    Promotions
+                                    <svg class="nav__lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.2 5.6C4.6 6.13333 5.4 6.13333 5.8 5.6L8.8 1.6C9.29443 0.940762 8.82405 -2.38419e-06 8 -2.38419e-06H2C1.17595 -2.38419e-06 0.705573 0.940762 1.2 1.6L4.2 5.6Z"
+                                            fill="#9BB3B7" />
+                                    </svg>
+                                </div>
+                                <div class="nav__item-hidden">
+                                    <ul class="nav__item-hidden-list">
+                                        <li class="nav__item-hidden-item">
+                                            <a href="giveaway.html" class="nav__item-hidden-link">Giveaway</a>
+                                        </li>
+                                        <li class="nav__item-hidden-item">
+                                            <a href="contest.html" class="nav__item-hidden-link">Trading contest</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <a href="referral-program.html" class="nav__link">
+                                    Referral Program
+                                </a>
                             </li>
                         </ul>
                     </nav>
                     <div class="header__btn btns">
-                        <a href="javascript:(void)"
-                            class="btns__item btn btn--small btn--semibold btn--transparent">Sign in</a>
-                        <a href="javascript:(void)" class="btns__item btn btn--small btn--semibold btn--mint">Sign
-                            up</a>
+                        <div class="btns__lang dropdown-lang">
+                            ENG
+                            <svg class="btns__lang-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.2 5.6C4.6 6.13333 5.4 6.13333 5.8 5.6L8.8 1.6C9.29443 0.940762 8.82405 -2.38419e-06 8 -2.38419e-06H2C1.17595 -2.38419e-06 0.705573 0.940762 1.2 1.6L4.2 5.6Z"
+                                    fill="#9BB3B7" />
+                            </svg>
+                        </div>
+                        <div class="btns__lang-list">
+                            <a href="#!" class="btns__lang-list-link">
+                                RU
+                            </a>
+                        </div>
+                        <a href="javascript:(void)" class="btns__item btn btn--small btn--semibold btn--transparent">Sign in</a>
+                        <a href="javascript:(void)" class="btns__item btn btn--small btn--semibold btn--mint">Sign up</a>
                         <div class="burger">
                             <div></div>
                             <div></div>
@@ -87,12 +146,10 @@
                 <div class="side__wrapper">
                     <nav class="side__menu">
                         <ul class="side__list">
-                            <li class="side__item"><a href="javascript:(void)" class="side__link">Finance Options</a>
-                            </li>
+                            <li class="side__item"><a href="javascript:(void)" class="side__link">Finance Options</a></li>
                             <li class="side__item"><a href="javascript:(void)" class="side__link">Help Center</a></li>
                             <li class="side__item"><a href="javascript:(void)" class="side__link">Promotions</a></li>
-                            <li class="side__item"><a href="javascript:(void)" class="side__link">Referral Program</a>
-                            </li>
+                            <li class="side__item"><a href="javascript:(void)" class="side__link">Referral Program</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -481,7 +538,7 @@
                                     only be distributed to the holder of the originating bank account. When making
                                     deposits in this manner, it is the responsibility of the Client to ensure that the
                                     client’s account number and registered name of the account owner accompany all
-                                    transfers to Smartytrade.<br><br>
+                                    transfers to Rocketbinary.<br><br>
 
                                     • When a client transfer funds to the account by means of credit/debit card
                                     deposits, funds will only be distributed to the individual whose name appears on the
@@ -490,7 +547,7 @@
                                     • Only one account is allowed per person. No funds may be collected on accounts
                                     opened in false names or on multiple accounts opened by the same person.<br><br>
 
-                                    • Smartytrade may, from time to time, at its sole discretion, require a client to
+                                    • Rocketbinary may, from time to time, at its sole discretion, require a client to
                                     provide additional proof of identity such as notarized copy of passport or other
                                     means of identity verification as it deems required under the circumstances and may
                                     at its sole discretion suspend an account with cancelling of all previously done
@@ -531,7 +588,7 @@
                             <ul class="agreement__terms-list">
                                 <li class="agreement__terms-list-item2">Rocketbinary offers a number of attractive reward features to its new and subsisting
                                     clients. Bonuses and one time trading credits awarded to clients are part of
-                                    Smartytrade’s promotional programmes. These bonuses are limited time offers and the
+                                    Rocketbinary’s promotional programmes. These bonuses are limited time offers and the
                                     terms and conditions associated with bonus rewards are subject to change.</li>
                         
                                     <li class="agreement__terms-list-item2"> Rocketbinary reserves the right to refuse, cancel or change the bonus at any time
@@ -588,7 +645,7 @@
                         
                                     <li class="agreement__terms-list-item2"> If the account is funded by an e-wallet (such as Qiwi), the client will be required
                                     to submit a photo ID and proof of address (as described above) where the address of
-                                    the document submitted matches that on the users account at Smartytrade.</li>
+                                    the document submitted matches that on the users account at Rocketbinary.</li>
                         
                                     <li class="agreement__terms-list-item2"> When sending required documents, please fullow these guidelines:</li>
                         
@@ -1051,29 +1108,113 @@
         </main>
         <footer class="footer footer--green">
         	<div class="wrapper">
-        		<div class="footer__wrapper wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".5s">
-        			<a href="index.html" class="logo logo--footer">
-        				<img src="img/main/logo.svg" alt="logo">
-        			</a>
-        			<nav class="footer__nav nav">
-        				<ul class="nav__list">
-        					<li class="nav__item"><a href="payment.html" class="nav__link nav__link--white">Finance Options</a></li>
-        					<li class="nav__item"><a href="help-center.html" class="nav__link nav__link--white">Help Center</a></li>
-        					<li class="nav__item"><a href="account.html" class="nav__link nav__link--white">Promotions</a></li>
-        					<li class="nav__item"><a href="referral-program.html" class="nav__link nav__link--white">Referral Program</a></li>
-        				</ul>
-        			</nav>
-        			<div class="socials">
-        				<div class="socials__item socials__text">Follow us:</div>
-        				<div class="socials__item socials__icon">
-        					<img src="img/icons/instagram.svg" alt="">
+        		<div class="footer__wrapper wow fadeIn" data-wow-delay=".3s" data-wow-duration=".5s">
+        			<div class="footer__menu">
+        				<div class="footer__title">
+        					About us
         				</div>
-        				<div class="socials__item socials__icon">
-        					<img src="img/icons/twitter.svg" alt="">
+        				<ul>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="contacts.html">
+        							Contacts
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="agreement.html">
+        							Terms and conditions
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="policy.html">
+        							Confidentiality Policy
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="bonus.html">
+        							Bonus Rules
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="risk.html">
+        							Risk statement
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="footer__menu">
+        				<div class="footer__title">
+        					How to start?
+        				</div>
+        				<ul>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="#!">
+        							Open an account
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="account.html">
+        							Account types
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="payment.html">
+        							Finance options
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="help-center.html">
+        							Help Center
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="footer__menu">
+        				<div class="footer__title">
+        					Promotions
+        				</div>
+        				<ul>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="contest.html">
+        							Trading contest
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="giveaway.html">
+        							Giveaway
+        						</a>
+        					</li>
+        					<li class="footer__menu-item">
+        						<a class="footer__menu-link" href="referral-program.html">
+        							Referral program
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        			<div class="footer__menu">
+        				<div class="footer__title">
+        					Follow us
+        				</div>
+        				<div class="footer__img-wrapper">
+        					<a class="footer__menu-img" href="">
+        						<img src="../img/common/instagram.svg" alt="">
+        					</a>
+        					<a class="footer__menu-img" href="">
+        						<img src="../img/common/twitter.svg" alt="">
+        					</a>
         				</div>
         			</div>
         		</div>
-        		<div class="footer__copyright">Rocketbinary © 2021</div>
+        		<div class="footer__note wow fadeIn" data-wow-delay=".3s" data-wow-duration=".5s">
+        			The financial services provided by this website carry a high level of risk and can result in the loss of all
+        			of your funds. You should never invest money that you cannot afford to lose. Please ensure you read our
+        			terms and conditions before making any operation in our trading platform. Under no circumstances the company
+        			has any liability to any person or entity for any loss or damage cause by operations on this website. Rocketbinary
+        			nor its agents or partners are not registered and do not provide any services on the USA territory.
+        		</div>
+        		<div class="footer__copyright wow fadeIn" data-wow-delay=".3s" data-wow-duration=".5s">
+        			© 2020 Wave Makers LTD - Nr. 103581, Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Marshall
+        			Islands MH96960
+        		</div>
         	</div>
         </footer>
     </div>
