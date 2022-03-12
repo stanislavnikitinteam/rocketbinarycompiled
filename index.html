@@ -133,8 +133,8 @@
 								RU
 							</a>
 						</div>
-						<a href="javascript:(void)" class="btns__item btn btn--small btn--semibold btn--transparent">Sign in</a>
-						<a href="javascript:(void)" class="btns__item btn btn--small btn--semibold btn--mint">Sign up</a>
+						<a href="#hidden2" data-fancybox class="btns__item btn btn--small btn--semibold btn--transparent">Sign in</a>
+						<a href="#hidden" data-fancybox class="btns__item btn btn--small btn--semibold btn--mint">Sign up</a>
 						<div class="burger">
 							<div></div>
 							<div></div>
@@ -146,10 +146,13 @@
 				<div class="side__wrapper">
 					<nav class="side__menu">
 						<ul class="side__list">
-							<li class="side__item"><a href="javascript:(void)" class="side__link">Finance Options</a></li>
-							<li class="side__item"><a href="javascript:(void)" class="side__link">Help Center</a></li>
-							<li class="side__item"><a href="javascript:(void)" class="side__link">Promotions</a></li>
-							<li class="side__item"><a href="javascript:(void)" class="side__link">Referral Program</a></li>
+							<li class="side__item"><a href="account.html" class="side__link">Account types</a></li>
+							<li class="side__item"><a href="payment.html" class="side__link">Finance Options</a></li>
+							<li class="side__item"><a href="help-center.html" class="side__link">Help Center</a></li>
+							<li class="side__item"><a href="giveaway.html" class="side__link">Giveaway</a></li>
+							<li class="side__item"><a href="contest.html" class="side__link">Trading contest</a></li>
+							<li class="side__item"><a href="referral-program.html" class="side__link">Referral Program</a></li>
+							<li class="side__item"><a href="#!" class="side__link">RU</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -505,7 +508,7 @@
 						</div>
 						<ul>
 							<li class="footer__menu-item">
-								<a class="footer__menu-link" href="#!">
+								<a class="footer__menu-link" href="#hidden" data-fancybox>
 									Open an account
 								</a>
 							</li>
@@ -554,10 +557,10 @@
 						</div>
 						<div class="footer__img-wrapper">
 							<a class="footer__menu-img" href="">
-								<img src="../img/common/instagram.svg" alt="">
+								<img src="img/common/instagram.svg" alt="">
 							</a>
 							<a class="footer__menu-img" href="">
-								<img src="../img/common/twitter.svg" alt="">
+								<img src="img/common/twitter.svg" alt="">
 							</a>
 						</div>
 					</div>
@@ -566,7 +569,8 @@
 					The financial services provided by this website carry a high level of risk and can result in the loss of all
 					of your funds. You should never invest money that you cannot afford to lose. Please ensure you read our
 					terms and conditions before making any operation in our trading platform. Under no circumstances the company
-					has any liability to any person or entity for any loss or damage cause by operations on this website. Rocketbinary
+					has any liability to any person or entity for any loss or damage cause by operations on this website.
+					Rocketbinary
 					nor its agents or partners are not registered and do not provide any services on the USA territory.
 				</div>
 				<div class="footer__copyright wow fadeIn" data-wow-delay=".3s" data-wow-duration=".5s">
@@ -574,6 +578,84 @@
 					Islands MH96960
 				</div>
 			</div>
+			<div class="popup" id="hidden">
+				<h2 class="popup__title">
+					Open an account
+				</h2>
+				<form action="" class="popup__form">
+					<div class="popup__wrapper-name">
+						<input type="text" spellcheck="false" placeholder="Name" class="popup__name">
+						<input type="text" spellcheck="false" placeholder="Surname" class="popup__surname">
+					</div>
+					<div class="popup__wrapper-name">
+						<input type="number" value="380" class="popup__prefix">
+						<input type="number" placeholder="Phone number" class="popup__number">
+					</div>
+					<input type="email" spellcheck="false" placeholder="Email (login)" class="popup__mail">
+					<div class="popup__wrapper-name">
+						<input type="password" placeholder="Password" class="popup__password">
+						<select class="ui dropdown popup__currency">
+							<option value="1">US Dollar (Account currency)</option>
+							<option value="2">Euro (Account currency)</option>
+							<option value="3">British pound (Account currency)</option>
+							<option value="4">Ruble (Account currency)</option>
+						  </select>
+					</div>
+					<input type="text" spellcheck="false" placeholder="Promo code (optional)" class="popup__hidden-code">
+					<div class="popup__wrapper-name1">
+						<label for="checkbox2" class="checkbox2">
+							<input type="checkbox" id="checkbox2" class="slider__checkbox">
+							<span class="fake2"></span>
+							<span class="checkbox2__span">I have red and agree to the <a href="agreement.html"
+									class="popup__link">Terms and Risk statement</a></span>
+						</label>
+						<label for="checkbox3" class="checkbox3">
+							<input type="checkbox" id="checkbox3" class="slider__checkbox">
+							<span class="fake2"></span>
+							<span class="checkbox3__span">I confirm, this service is provided to me outside USA territory</span>
+						</label>
+					</div>
+					<div class="popup__wrapper-name">
+						<p class="popup__code">
+							Have a promo code?
+						</p>
+						<button class="popup__button">
+							Next
+						</button>
+					</div>
+				</form>
+			</div>
+		
+		
+		
+		
+		
+			<div class="popup popup2" id="hidden2">
+				<h2 class="popup__title">
+					Log in
+				</h2>
+				<form action="" class="popup__form">
+					<div class="popup__wrapper">
+						<input type="email" placeholder="Email (login)" class="popup__mail2">
+					</div>
+					<div class="popup__wrapper">
+						<input type="password" placeholder="Password" class="popup__password2">
+					</div>
+					<div class="popup__wrapper-name">
+						<label for="checkbox4" class="checkbox4">
+							<input type="checkbox" id="checkbox4" class="slider__checkbox">
+							<span class="fake3"></span>
+							<span class="checkbox4__span">Stay logged in</span>
+						</label>
+						<button class="popup__button">
+							Next
+						</button>
+					</div>
+					<a href="#!" class="popup__forgot">Forgot your password?</a>
+					<p class="popup__register">Don’t have an account yet? <a href="#hidden" data-fancybox class="popup__register-link">Register</a></p>
+				</form>
+			</div>
+		 
 		</footer>
 	</div>
 
