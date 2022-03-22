@@ -394,16 +394,16 @@
         		</h2>
         		<form action="" class="popup__form">
         			<div class="popup__wrapper-name">
-        				<input type="text" spellcheck="false" placeholder="Name" class="popup__name">
-        				<input type="text" spellcheck="false" placeholder="Surname" class="popup__surname">
+        				<input type="text" spellcheck="false" placeholder="Name" class="popup__name" required>
+        				<input type="text" spellcheck="false" placeholder="Surname" class="popup__surname" required>
         			</div>
         			<div class="popup__wrapper-name">
-        				<input type="number" value="380" class="popup__prefix">
-        				<input type="number" placeholder="Phone number" class="popup__number">
+        				<input type="text" value="380" placeholder="Code" class="popup__prefix" pattern="\+?[0-9][0-9]?[0-9]?" title="Three number country code" maxlength="3" required> 
+        				<input type="number" placeholder="Phone number" class="popup__number" required>
         			</div>
-        			<input type="email" spellcheck="false" placeholder="Email (login)" class="popup__mail">
+        			<input type="email" spellcheck="false" placeholder="Email (login)" class="popup__mail" required>
         			<div class="popup__wrapper-name">
-        				<input type="password" placeholder="Password" class="popup__password">
+        				<input type="password" placeholder="Password" class="popup__password" required minlength="6">
         				<select class="ui dropdown popup__currency">
         					<option value="1">US Dollar (Account currency)</option>
         					<option value="2">Euro (Account currency)</option>
@@ -414,13 +414,13 @@
         			<input type="text" spellcheck="false" placeholder="Promo code (optional)" class="popup__hidden-code">
         			<div class="popup__wrapper-name1">
         				<label for="checkbox2" class="checkbox2">
-        					<input type="checkbox" id="checkbox2" class="slider__checkbox">
+        					<input type="checkbox" id="checkbox2" class="slider__checkbox" required>
         					<span class="fake2"></span>
         					<span class="checkbox2__span">I have red and agree to the <a href="agreement.html"
         							class="popup__link">Terms and Risk statement</a></span>
         				</label>
         				<label for="checkbox3" class="checkbox3">
-        					<input type="checkbox" id="checkbox3" class="slider__checkbox">
+        					<input type="checkbox" id="checkbox3" class="slider__checkbox" required>
         					<span class="fake2"></span>
         					<span class="checkbox3__span">I confirm, this service is provided to me outside USA territory</span>
         				</label>
@@ -446,10 +446,10 @@
         		</h2>
         		<form action="" class="popup__form">
         			<div class="popup__wrapper">
-        				<input type="email" placeholder="Email (login)" class="popup__mail2">
+        				<input type="email" placeholder="Email (login)" class="popup__mail2" spellcheck="false" required>
         			</div>
         			<div class="popup__wrapper">
-        				<input type="password" placeholder="Password" class="popup__password2">
+        				<input type="password" placeholder="Password" class="popup__password2" minlength="6" required>
         			</div>
         			<div class="popup__wrapper-name">
         				<label for="checkbox4" class="checkbox4">
